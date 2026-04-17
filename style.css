@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  background: #020617;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.app {
+  padding: 15px;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+input {
+  width: 70%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #22c55e;
+  color: white;
+}
+
+.player-container {
+  margin-top: 20px;
+}
+
+video, audio, iframe {
+  width: 100%;
+  max-height: 70vh;
+  border-radius: 12px;
+  display: none;
+  background: black;
+}
+
+iframe {
+  height: 60vh;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+#status {
+  color: #f87171;
+  }
