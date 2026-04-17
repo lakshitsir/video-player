@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultimate Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h2>🔥 Ultimate Hybrid Player</h2>
+
+  <div class="input-box">
+    <input id="urlInput" placeholder="Paste ANY media URL..." />
+    <button onclick="loadMedia()">Play</button>
+  </div>
+
+  <div class="player-container">
+
+    <video id="video" controls playsinline></video>
+    <audio id="audio" controls></audio>
+    <iframe id="iframe" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+    <div class="controls">
+      <button onclick="seek(-10)">⏪ 10s</button>
+      <button onclick="togglePlay()">⏯</button>
+      <button onclick="seek(10)">⏩ 10s</button>
+    </div>
+
+  </div>
+
+  <p id="status"></p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
